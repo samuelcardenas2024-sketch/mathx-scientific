@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MATHX Scientific: calculadora científica web.">
+  <title>MATHX SCIENTIFIC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">∑</div>
+      <div>
+        <h1>MATHX <span>SCIENTIFIC</span></h1>
+        <p>Calculadora científica</p>
+      </div>
+      <button id="angle-mode" class="mode-button" type="button" title="Cambiar entre grados y radianes">DEG</button>
+    </header>
+
+    <section class="calculator" aria-label="Calculadora científica">
+      <div class="display">
+        <div id="expression" class="expression" aria-live="polite">Listo para calcular</div>
+        <output id="result" class="result" aria-live="polite">0</output>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button class="key function" data-action="clear">AC</button>
+        <button class="key function" data-action="delete" aria-label="Borrar último carácter">DEL</button>
+        <button class="key function" data-insert="(">(</button>
+        <button class="key function" data-insert=")">)</button>
+        <button class="key operator" data-insert="÷">÷</button>
+
+        <button class="key function" data-insert="sin(">sin</button>
+        <button class="key function" data-insert="cos(">cos</button>
+        <button class="key function" data-insert="tan(">tan</button>
+        <button class="key function" data-insert="√(">√</button>
+        <button class="key operator" data-insert="×">×</button>
+
+        <button class="key function" data-insert="log(">log</button>
+        <button class="key function" data-insert="ln(">ln</button>
+        <button class="key function" data-insert="^2">x²</button>
+        <button class="key function" data-insert="^">xʸ</button>
+        <button class="key operator" data-insert="−">−</button>
+
+        <button class="key function" data-insert="π">π</button>
+        <button class="key function" data-insert="e">e</button>
+        <button class="key number" data-insert="7">7</button>
+        <button class="key number" data-insert="8">8</button>
+        <button class="key number" data-insert="9">9</button>
+
+        <button class="key function" data-insert="!">n!</button>
+        <button class="key function" data-insert="%">%</button>
+        <button class="key number" data-insert="4">4</button>
+        <button class="key number" data-insert="5">5</button>
+        <button class="key number" data-insert="6">6</button>
+
+        <button class="key function" data-insert="Ans">Ans</button>
+        <button class="key operator" data-insert="÷">÷</button>
+        <button class="key number" data-insert="1">1</button>
+        <button class="key number" data-insert="2">2</button>
+        <button class="key number" data-insert="3">3</button>
+
+        <button class="key function" data-action="sign">+/−</button>
+        <button class="key operator" data-insert="×">×</button>
+        <button class="key number zero" data-insert="0">0</button>
+        <button class="key number" data-insert=".">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+      <p class="hint">También puedes escribir con el teclado. Pulsa Enter para calcular y Escape para borrar.</p>
+    </section>
+    <footer>Hecho para aprender matemáticas · MATHX SCIENTIFIC</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
